@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 export default function Card(props) {
 	return (
-		<div className= "card" >{props.card}</div>
+		<div className= "card" >{props.words}</div>
 	);
 }

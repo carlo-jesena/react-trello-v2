@@ -1,18 +1,25 @@
 import React from 'react';
 import Card from './card';
 
-export default function List() {
+export default function List(props) {
+	const cards = [];
+	for (let i = 0; i < 3; i++) {
+		cards.push(<List />);
+	}
+
 	return (
 		<div className= "list" title="cards"> 
 			<Card title= "Carlo Jesena"
-				  cards= "hello carlo"
+				  words= {props.cards[0]}
 							/>
 			<Card title= "Alex Poe"
-				  cards= "hello alex"
+				  words= {props.cards[1]}
 							/>
 			<Card title= "Rodrigo Alves"
-				  cards= "hello rodrigo"
-							/>										
+				  words= {props.cards[2]}
+							/>	
+
+							{/*<div>{props.january}</div>*/}									
 		</div>
 	);
 }
