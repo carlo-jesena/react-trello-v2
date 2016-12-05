@@ -1,9 +1,13 @@
 import React from 'react';
 import List from './list';
 
-export default function Board() {
+export default function Board(props) {
+	
+
 	return (
-		<div classname = "board">
+		<div className = "board">
+		<div className = "title">{props.title}</div>
+			<div className = "lists">{props.title}</div>
 			<List/>
 			<List/>
 			<List/>
